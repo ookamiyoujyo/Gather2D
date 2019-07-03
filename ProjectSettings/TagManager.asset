@@ -7,6 +7,7 @@ TagManager:
   - Miscellaneous food
   - Meat food
   - Herbivores
+  - no touch
   layers:
   - Default
   - TransparentFX

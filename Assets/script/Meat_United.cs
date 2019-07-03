@@ -4,15 +4,37 @@ using UnityEngine;
 
 public class Meat_United : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Player;
 
-    // Update is called once per frame
-    void Update()
+    public GameObject Geteffect, noeffect, killeffect;
+    void OnCollisionEnter(Collision other)
     {
-        
+        if (other.gameObject.tag == "Miscellaneous food" || other.gameObject.tag == "Meat food")
+        {
+            foreach (ContactPoint point in other.contacts)
+            {
+                Instantiate(Geteffect, point.point, Quaternion.identity);
+            }
+            transform.parent = Player.transform;
+        }
+
+
+        if (other.gameObject.tag == "Herbivores")
+        {
+            foreach (ContactPoint point in other.contacts)
+            {
+                Instantiate(noeffect, point.point, Quaternion.identity);
+            }
+        }
+
+
+        if (other.gameObject.tag == "no touch")
+        {
+            foreach (ContactPoint point in other.contacts)
+            {
+                Instantiate(killeffect, point.point, Quaternion.identity);
+            }
+            Player_Move.controoff();
+        }
     }
 }
