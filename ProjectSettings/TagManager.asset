@@ -8,6 +8,8 @@ TagManager:
   - Meat food
   - Herbivores
   - no touch
+  - FxTemporaire
+  - goal
   layers:
   - Default
   - TransparentFX

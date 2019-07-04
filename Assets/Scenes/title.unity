@@ -177,7 +177,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\u30A2\u30CB\u30DE\u30EB"
+  m_text: "\u30A2\u30CB\u30DE~\u30EB"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d395b89acd89f4a49b47d45defa26a0e, type: 2}
   m_sharedMaterial: {fileID: 4104364491209622419, guid: d395b89acd89f4a49b47d45defa26a0e,
@@ -247,10 +247,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -542.2307, w: -134.67166}
   m_textInfo:
     textComponent: {fileID: 250363568}
-    characterCount: 4
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -550,10 +550,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 540}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -770,13 +770,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280841592}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.22616625, y: -0.20816442, z: 0.15380168, w: 0.9390749}
   m_LocalPosition: {x: -5.3094816, y: 9.418148, z: -21.492928}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3322, y: 1.3322, z: 1.3322}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.262001, y: -21.617, z: 12.896001}
 --- !u!1 &1505815903
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,8 +862,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505815903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 5, z: 1}
-  m_LocalScale: {x: 41.3315, y: 41.3315, z: 0.82663}
+  m_LocalPosition: {x: -0.2, y: -0.8, z: 1}
+  m_LocalScale: {x: 35, y: 35, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -935,12 +935,12 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255418
-  m_fontColor: {r: 0.23092759, g: 1, b: 0, a: 1}
+    rgba: 4286316309
+  m_fontColor: {r: 0.084905684, g: 1, b: 0.4861736, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 0, g: 0, b: 0, a: 1}
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
     bottomLeft: {r: 0, g: 0.74547243, b: 1, a: 1}
     bottomRight: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
