@@ -8,7 +8,7 @@ public class Player_Move : MonoBehaviour
     public float speed = 5, Rotate_Speed = 50;
     static string control_Permission;
     public int clearcount;
-    int count = 0;
+    int count = 0; int clear_furagu = 0;
     public enum control
     {
         play,
@@ -70,8 +70,11 @@ public class Player_Move : MonoBehaviour
     float effectspeed = 0.05f, speed1 = 0.01f, data = 0, data1 = 0;
     public void gameover()
     {
-        overbutton.SetActive(true);
-        GAMEOVERtext.SetActive(true);
+        if (clear_furagu == 0)
+        {
+            overbutton.SetActive(true);
+            GAMEOVERtext.SetActive(true);
+        }
     }
 
 
@@ -79,6 +82,7 @@ public class Player_Move : MonoBehaviour
     {
         if (count >= clearcount)
         {
+            clear_furagu = 1;
             controoff();
             clearbutton.SetActive(true);
             text.SetActive(true);
