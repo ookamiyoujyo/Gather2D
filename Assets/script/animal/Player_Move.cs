@@ -16,7 +16,6 @@ public class Player_Move : MonoBehaviour
     }
     void Start()
     {
-
         clearcount *= 2;
         red = fadeImage.color.r;
         green = fadeImage.color.g;
@@ -72,6 +71,8 @@ public class Player_Move : MonoBehaviour
     {
         if (clear_furagu == 0)
         {
+            BGM.Stop();
+            BGM.Play(2);
             overbutton.SetActive(true);
             GAMEOVERtext.SetActive(true);
         }
@@ -82,6 +83,8 @@ public class Player_Move : MonoBehaviour
     {
         if (count >= clearcount)
         {
+            BGM.Stop();
+            BGM.Play(1);
             clear_furagu = 1;
             controoff();
             clearbutton.SetActive(true);
@@ -146,6 +149,7 @@ public class Player_Move : MonoBehaviour
         SetAlpha();
         if (alfa <= 0)  //⑨完全に不透明になったらループを抜ける
         {
+            BGM.Play(0);
             control control = control.play;
             control_Permission = control.ToString();
             return false;   //⑭コルーチンのループを止める

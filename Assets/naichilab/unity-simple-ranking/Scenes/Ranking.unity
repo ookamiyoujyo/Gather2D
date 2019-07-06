@@ -988,10 +988,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 660052784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b79eba32ddfef4bbeff2c1cd81742e, type: 3}
+  m_Script: {fileID: 11500000, guid: 571a526f976f155438757df6e75024eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectstage: 0
+  selectstage: 11
   fadeImage: {fileID: 1285257526}
   timer_txst: {fileID: 658303777}
   timer_txst_object: {fileID: 658303776}

@@ -17,6 +17,7 @@ public class Grass_United : MonoBehaviour
             }
             gamemanager.GetComponent<Player_Move>().countnext();
             transform.parent = Player.transform;
+            SE.play(0);
         }
 
         if(other.gameObject.tag == "Meat food")
@@ -25,6 +26,7 @@ public class Grass_United : MonoBehaviour
             {
                 Instantiate(noeffect, point.point, Quaternion.identity);
             }
+            SE.play(1);
         }
 
             if (other.gameObject.tag ==  "no touch")
@@ -35,6 +37,7 @@ public class Grass_United : MonoBehaviour
             }
             Player_Move.controoff();
             gamemanager.GetComponent<Player_Move>().gameover();
+            SE.play(2);
         }
         if (other.gameObject.tag == "goal")
         {
@@ -43,6 +46,7 @@ public class Grass_United : MonoBehaviour
                 Instantiate(goalstar, point.point, Quaternion.identity);
             }
             gamemanager.GetComponent<Player_Move>().effectstart();
+            SE.play(3);
         }
     }
 }

@@ -32,8 +32,10 @@ public class title_start : MonoBehaviour
         SetAlpha();
         if (alfa <= 0)  //⑨完全に不透明になったらループを抜ける
         {
+            BGM.Play(0);
             fade_Image.SetActive(false);
             start_game_button.SetActive(true);
+            BGM.Play(0);
             return false;   //⑭コルーチンのループを止める
         }
         return true;    //⑩コルーチンのループに戻る

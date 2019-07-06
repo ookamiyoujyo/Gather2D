@@ -106,6 +106,7 @@ public class button_ON : MonoBehaviour
         buttonSetAlpha();
         if (button_alfa >= 1)  //⑨完全に不透明になったらループを抜ける
         {
+            Debug.Log(date);
             if (date >= 0)
             {
                 start_game_button[0].SetActive(true);
