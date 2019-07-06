@@ -532,6 +532,12 @@ MonoBehaviour:
   Player: {fileID: 1384410765}
   speed: 5
   Rotate_Speed: 60
+  clearcount: 0
+  text: {fileID: 0}
+  GAMEOVERtext: {fileID: 0}
+  clearbutton: {fileID: 0}
+  overbutton: {fileID: 0}
+  fadeImage: {fileID: 0}
 --- !u!4 &1293706359
 Transform:
   m_ObjectHideFlags: 0
